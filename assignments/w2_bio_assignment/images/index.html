@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+        /*SELECTING in CSS & Javascript: select specific elements(s) on a page 
+            *by ELEMENT type        ex: body, div, p
+            *by ID attribute        ex: #wrapper, #nav, #footer
+            *by CLASS attribute     ex: coming in week 3 :]
+
+        */
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+
+        #nav, #footer {
+            background-color:lightgrey; 
+        }
+    </style>
+</head>
+<body style = "background-color:grey">
+    <div id = "wrapper"> <!-- This is the wrapper, and it wraps around all the content --> 
+    
+        <!--Header-->
+        <h1>Didier Ferland Haroun</h1>
+
+        <!--Nav-->
+        <div id="nav">
+            <!--EXTERNAL LINK: a link to a page OUTSIDE of your website-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+                                        <!--^ this attribute adds a new tab to you browser-->
+
+            <!--INTERNAL LINK: a link to a page inside of your website/root folder-->
+            <!--RELATIVE PATH-->
+            <a href="page2.html">Page 2</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="footer">Bottom of Page</a>
+             </div>
+
+        <!--Bios-->
+        <div id="bios">
+            <h2>About me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+            
+            <!--remote IMAGE LINKA (ABSOLUTE PATHS) BOOOO!! BAD!!-->
+            
+            <img src="https://i1.sndcdn.com/artworks-187CFzwAbcvJP4pl-hjbzvA-t240x240.jpg" alt="WULTAH" style="width:500px" title="WULTAH">
+            
+            <!--RELATIVE link (relative path) resources must be stored in the root folder-->
+            <img src="images/stormsEnd.jpg" alt="Storm's End castle in spring time" style="width:500px">
+                </div>
+
+        <!--Schools-->
+        <div id="schools" >
+            <h2>Schools</h2>
+
+            <ol>
+                <li>New England Institute of Technology</li>
+                <li>Aerographer's Mate A-School (US NAVY)</li>
+                <li>Cranston High School West</li>
+                
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous Building at dusk" style="width:500px">
+            
+        </div>
+
+        <!--Hobbies-->
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Arts & Crafts</li>
+                <li>Arts & Crafts</li>
+                <li>Arts & Crafts</li>
+                <li>Arts & Crafts</li>
+                <li>Arts & Crafts</li>
+                <li>Video Games</li>
+            </ul>
+            
+        </div>
+
+        <!--Footer-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; Didier Ferland Haroun | SE111 | Winter 2023</p>
+            <br>
+            <!--Validation SCREENSHOT-->
+            <img src="images/validation.png" alt="validation of page">
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+</body>
+</html>
