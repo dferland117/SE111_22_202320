@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Didier Ferland Haroun">
+    <meta name="description" content="W6 Intro to 35 Demo">
+    <title>W6 |Intro to JS |</title>
+
+
+
+</head>
+<body>
+    <!--ideally, we should have some sort of HTML file-->
+    <h1>Week 6 Intro Demo | JavaScript</h1>
+    <!--<script> tags almost always go after any pre-written HTML (ie at the end fo the <body>)-->
+    <!--IN DOCUMENT JAVASCRIPT below-->
+
+    <script>
+        
+        //everything inside the <script> tags MUST be written in JAVASCRIPT
+
+        //creating (declaring) a variable -- keyword
+        var num1 = 10
+        var num2 = 7
+
+        //cannot use num1 or num2 until they have been assigned data (=)
+        //variable assignment --> DEFINITION 
+
+        var sum = num1 + num2 
+
+        //OUTPUT --> Displaying data out of the program
+        //output display for testing --> console.log()
+
+        console.log(num1 + "+" + num2 + "=" + sum)
+
+        /* console.log() is only for the devleoper & for testing to access the developer tools:
+                    *hit F12 on windows/PC
+                    *click into the developer tools from the browser menu
+                    ...> more tools  . developer 
+            */
+
+        // Literal strings --> these use `` not ''
+        //${VAR} display stored value from var names
+        console.log(`${num1} + ${num2} = ${sum.toFixed(2)}`)
+
+        //output display for user --> alert()
+        //alert() --> print() in PYTHON
+        //alert(`The sum is: ${sum}!`) //user must answer for code to continue 
+
+        //escape sequences also work in string ie (" ", '', ``)
+        // \t is tab, \n is new line
+
+
+        //INPUT --> gaining data from the user 
+        //prompt() --> input() in PYTHON
+        //prompt() returns as STRING -> to cast a Number()
+        //assign return of prompt() to var to use in rest of 
+        var tip = Number(prompt(`Hello World! The sum is ${sum}! \nEnter a number to add as a tip: $`)) //waits for user imput
+        var total = sum + tip
+        alert(`Your tital with tip is now: ${total.toFixed(2)}`)
+
+    </script>    
+    
+</body>
+</html>
