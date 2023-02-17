@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang=`en`>
+<head>
+    <meta charset=`UTF-8`>
+    <meta http-equiv=`X-UA-Compatible` content=`IE=edge`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
+    <meta name=`author` content=`Didier Ferland Haroun`>
+    <meta name=`description` content=`W6 Intro to 35 Demo`>
+    <title>W6 |Intro to JS |</title>
+
+
+
+</head>
+<body>
+    <!--ideally, we should have some sort of HTML file-->
+    <h1>Week 6 Intro Demo | JavaScript</h1>
+    <!--<script> tags almost always go after any pre-written HTML (ie at the end fo the <body>)-->
+    <!--IN DOCUMENT JAVASCRIPT below-->
+
+    <script>
+        var rate = Number(prompt(`How much do you make hourly? `))
+        var hours = Number(prompt(`How many hours do you work a week? `))
+        var tax = Number(prompt(`How much do you pay in taxes? (ex. 7% tax input 7) `))
+        var tax = tax / 100
+        var gross = (rate * hours) 
+        var taxAmount = gross * tax
+        var netPay = gross - taxAmount
+        console.log(`\n\n`)
+        console.log(`Gross Pay: $${gross.toFixed(2)}`)
+        console.log(`\tYour tax deductions is: $${taxAmount.toFixed(2)}`)
+        console.log(`\tNet Pay: $${netPay.toFixed(2)}}`)
+        console.log(`\tDon't spend it all in one place! Have a great day!`)
+        alert(`Gross Pay: $${gross.toFixed(2)} \nYour tax deductions is: $${taxAmount.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}\nDon't spend it all in one place! Have a great day!`)
+        
+    </script>    
+    
+</body>
+</html>

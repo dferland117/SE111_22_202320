@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="Default HTML Page for SE 111">
+    <meta name = "author" content = "Didier Ferland Haroun">
+    <title>W5 | Tables & Forms</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Week 5 | Tables and Forms</title>
+</head>
+
+<body>
+    <h1>Birthday Party Registration Form</h1>
+    <h6>Didier Ferland Haroun</h6>
+
+    <form action="confirm.html" method="GET">
+        <table>
+
+            <thead>
+                <td>
+                   <label for="header"><b>Labels</b></label>
+                </td>
+                
+                <td>
+                    <label for="formfields"><b>Forms Fields</b></label>
+                </td>
+            </thead>
+
+        <tbody>       
+            <!--Parent's Name ROW -->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="g-first">Parent/Guardian Name</label>
+                </td>
+
+                <!--INPUT-->
+                <td>
+                    <input type="text" name="gfirst" id="g-first" placeholder="First Name" required maxlength="20"><br>
+                    <input type="text" name="glast" id="g-last" placeholder="Last Name" required maxlength="20">
+                </td>
+            </tr>
+
+            <!--Child's First Name ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="c-first">Childs's First Name</label>
+                </td>
+
+                <!--INPUT-->
+                <td>
+                    <input type="text" name="cfirst" id="c-first" placeholder="Child's FirstName" required>
+                </td>
+            </tr>
+                <!--Child's Age ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="age">Childs's Age</label>
+                </td>
+
+                <!--INPUT-->
+                <td>
+                    <input type="number" name="age" id="age" value="3" required>
+                </td>
+            </tr>
+
+            <tr> <!--Date and Time-->
+                <!--LABEL-->
+                <td>
+                    <h2>Date and Time</h2>
+                </td>
+
+                <td></td>
+            </tr>
+
+                 <!--Date ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="date">Date</label>
+                </td>
+
+                <!--INPUT-->
+                <td>
+                    <input type="date" name="date" id="date" required>
+                </td>
+            </tr>
+                   <!--Start Time ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="time">Start Time</label>
+                </td>
+
+                <!--INPUT-->
+                <td>
+                    <input type="time" name="time" id="s-time" required>
+                </td>
+            </tr>
+                   <!--Number of Guest ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="guests">Number of Guests</label>
+                </td>
+
+                <!--INPUT-->
+                <td>
+                    <input type="number" name="guests" value = 5>
+                </td>
+            </tr>
+
+            <tr> <!--Food-->
+                <!--LABEL-->
+                <td>
+                    <h2>Food</h2>
+                </td>
+
+                <td></td>
+            </tr>
+
+                    <!--Size ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="size">Size</label>
+                </td>
+                <!--INPUT-->
+                <td>
+                  
+                    <input type="radio" name="size" value="sm">sm
+                    <input type="radio" name="size" value="med">med
+                    <input type="radio" name="size" value="lg">lg
+                </td>
+            </tr>   <!--END of Size ROW-->
+
+                    <!--Drinks ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label>Drinks</label>
+                </td>
+                <br>
+                <!--INPUT-->
+                <td>
+                    <input type="checkbox" name="drink1" id="drink1" value="coke" checked>Coke <br>
+                    <input type="checkbox" name="drink2" id="drink2" value="sprite">Sprite <br>
+                    <input type="checkbox" name="drink3" id="drink3" value="fruit punch">Fruit Punch <br>
+                    <input type="checkbox" name="drink4" id="drink4" value="lemonade">Lemonade <br>
+                    <input type="checkbox" name="drink5" id="drink5" value="iced tea">Iced Tea <br>
+                </td>
+            </tr>   
+
+                    <!--Cake Flavor ROW:-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="cake">Cake</label>
+                </td>
+                <!--INPUT-->
+                <td>
+                    <select name="cake" id="cake">
+                        
+                        <option selected>Chocolate</option>
+                        <option>Vanilla</option>
+                        <option>I'll bring my own</option>
+
+                    </select>
+                </td>
+            </tr> 
+
+            <tr> <!--Decorations-->
+                <!--LABEL-->
+                <td>
+                    <h2>Decorations</h2>
+                </td>
+                <td></td>
+            </tr>
+            
+    
+                    <!--Color ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label for="colors">Colors</label>
+                </td>
+                <!--INPUT-->
+                <td>
+                    
+                    <input type="color" name="colors" id="colors">
+         
+                </td>
+            </tr>
+
+                <!--Comments ROW-->
+            <tr>
+            <!--LABEL-->
+            <td>
+                <label for="comments">Additional Comments</label>
+            </td>
+            <!--INPUT-->
+            <td>
+                
+                <textarea name="comments" id="comments" placeholder="Please add any additional comments"></textarea>
+        
+            </td>
+            </tr>
+
+                <!--Submit ROW-->
+            <tr>
+                <!--LABEL-->
+                <td>
+                    <label></label>
+                </td>
+                <!--INPUT-->
+                <td>
+                    
+                    <input type="submit" value="Submit">               </textarea>
+            
+                </td>
+            </tr>
+        
+
+         </tbody>
+        </table>
+    </form>
+            <p>&copy; Didier Ferland Haroun | SE111.22 | Winter 2023</p>
+            <img src="images/validation.png" alt="validation" width="350px">
+</body>
+</html>
