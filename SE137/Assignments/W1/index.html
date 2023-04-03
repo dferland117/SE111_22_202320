@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display:none;
+        }
+
+        h2{
+            font-size:36px;
+            color: blueviolet;
+        }
+
+        body{
+            background-color:lemonchiffon
+        }
+        #title{
+            color:crimson;
+        }
+        a{
+            color:blue;
+        }
+        #pics{
+            border-radius: 8px;
+            max-width: 100%;
+            height: 400px;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1 id="title">Didier Ferland Haroun</h1>
+    <hr>
+    <div id="nav">
+    <a href="#">BIO</a>
+    <a href="#">EDUCATION</a>
+    <a href="#">HOBBIES</a>
+    <a id="show-all" href="#">SHOW ALL</a>
+    <hr>
+    </div>
+   
+
+    <div id="main">
+        <div id="bio" class="content">
+            <h2>My Bio</h2>
+            <p>Hello! My name is <b>Didier</b> and I was born in <em>Montreal, Canada</em> on <u>Febuary 21, 2000</u>. I moved to Cranston, Rhode Island shortly after in 2002 when my dad was able to land a great job oppurtunity in Boston. Most of my family lives in Montreal so I tend to visit as often as I can, this has made me fluentent in french from being there so much. I am also Syrian as my father was born in Aleppo Syria. This helps explain my french (Didier Ferland) name and my arabic name (Haroun). I am proir Navy and served 3 years before being honorably medically retired by the Navy from the back injury I sustained during my time in service. I did oceanograpghy for the Navy, which exposed me early to working very closly with technolgy on a daily basis. I loved it and knew that working with computers was my dream. Since the day of my discharge, I have been charging to start my path onto becoming a software engineer and that is why I am here now. I was upset about my discharge because I was doing so well in the Navy but I soon started relizing everything happens for a reason and I couldn't be happier to be where I am at today. I can now chase my dream with nothing holding me back!</p>  
+            <img id="pics" alt="Picture of me" src="images/yuki_baby.jpg">
+        </div>
+        <div id="education" class="content">
+            <h2>Education</h2>
+            <ol>
+                <li>Got accepted to the <a href="https://www.colorado.edu/cs/academics/undergraduate-programs/bachelor-science" target=”_blank”><b>University of Colorado Boulder</b></a> for Fall 2023 term and will be majoring Computer Science</li>
+                <li><b>New England Institute of Technology</b></li>
+                <li><b>Combat School for Expeditionary Forces</b></li>
+                <li><b>Aerographer's Mate A-School (US NAVY)</b> | This is where I learned my job in the Navy, which was meteorology and oceanography.</li>
+                <li><b>Cranston High School West</b></li>
+                
+            </ol>
+        </div>
+        <div id="hobbies" class="content">
+            <h2>Hobbies</h2>
+            <ul>
+                <li><b>Snowboarding:</b> Absolutely love this sport, whenever I'm on the mountain I feel so present.</li>
+                <li><b>Surfing:</b> Surfing brings being present to a whole new level. The whole time I'm in the water I am living live completely in the moment!</li>
+                <li><b>Hiking:</b> Love being outside in the fresh air surrounded by trees and wildlife. </li>
+                <li><b>Foodie:</b> I am a big guy and being a foodie helps that. I love trying new foods!</li>
+                <li><b>Dog Father:</b> I am the father of a baby boy named "Yuki" (he's a Siberian Husky not a human baby)</li>
+                <li><b>Video Games:</b> They been a part of my life since I was little. I spend a good part of my free time at home playing video games.</li>
+                <li><b>Movies:</b> Nothing like sitting back and relaxing watching a thriller movie</li>
+
+            </ul>
+            <img id="pics" alt="Picture of me" src="images/CR-Surfer-770x490.jpg">
+
+        </div>
+        <div id="footer">
+            <hr>
+            <p>&copy; Didier Ferland Haroun | SE137 | Spring 2023</p>
+        </div><!--end of FOOTER-->
+    </div>
+
+    <script>
+
+        var a = document.querySelectorAll(`#nav a`); //grabs all `a` tags in the nav div
+
+        for(let i=0; i<a.length-1; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+                console.log(div)
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].classList.add(`hide`);
+                }
+                
+                div[i].classList.remove(`hide`); 
+                
+            })
+        }
+
+        var home = document.querySelector(`#show-all`); console.log(home)
+        home.addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].classList.remove(`hide`);
+                }
+                
+
+                
+            })
+
+
+
+    </script>
+
+</body>
+</html>
