@@ -1,84 +1,133 @@
 @charset "UTF-8";
 
-html, body{
-    box-sizing: border-box;
-    height:90%;
-    margin:0px;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+
+html{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.hide{
+    display: none;
+}
 main{
-    display:grid;
+    display: grid;
     column-gap: 20px;
     row-gap: 20px;
-    background-color: yellowgreen;
-    color: brown;
     border: 10px solid black;
     box-sizing: border-box;
-    min-height: 100%;
-    width: 1112px;
+    width: 1150px;
     position: relative;
     margin: 0 auto;
-    grid-template-areas: "h h h h h h"
+    min-height: 100%;
+    background-image: url(images/LordofCinder.png);
+    grid-template-areas: "t t t t t t"
                          "b b b b b b"
                          "b b b b b b"
-                         "n n n n s s"
-                         "n n n n s s"
-                         "f f f f f f";  
- }
-
- header{
-    background-color:aqua;  
-    grid-area:h;
-    height: 50px;
-    margin: 5px;
-    margin-bottom: -125px;
+                         "h h h h s s"
+                         "h h h h s s"
+                         "f f f f f f";   
 }
- nav{
-    display: none;
-     
- }
- #bio{
-    margin-top: -50px;
-    background-color: blue;
-    grid-area:b;
-    height: 100%; 
-    margin-left: 5px;
-    margin-right: 5px;
- }
- #schooling{
-    margin-top: -50px;
-    background-color: magenta;
-    grid-area:s;
-    height: 100%; 
-    margin-right: 5px;  
- }
+#bio{
+    grid-area: b;
+    color: #ffffff;
+    background-color: rgba(197, 91, 4, 0.445); 
+}
 #hobbies{
-    margin-top: -50px;
-    background-color: yellow;
-    grid-area:n;
-    margin-left: 5px;
-    height: 100%; 
+    grid-area: h;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.295);   
+    background-image: url(images/Solaire-of-Astora.png);
+    width: 728px;
+    background-color: rgba(0, 0, 0, 0.295);   
 }
-
-footer{
-    background-color: red;
-    grid-area:f;
-    height: 50px;
-    margin-bottom: -100px;
-    margin-top: -50px;   
-}
-
-nav a{
-    display:inline-block;
-    padding:20px;
-    border:1px solid black;
-    border-radius:20px;
-}
-nav a:link, nav a:visited{
-    background-color: bisque;
+header{
+    grid-area: t;
+    color:#650808;
+    text-align: left;
+    margin: 0 20 20 20px;
+    font-family: 'Jim Nightshade', cursive;
+    background-color: rgba(197, 91, 4, 0.445); 
     
 }
-nav a:hover, nav a:active{
-    background-color: white;
+
+header h1{
+    margin-left: 20px;
 }
+#ed{
+    grid-area: s;
+    height: 300px;
+    width: 380px;
+    font-size: large;
+    background-color: rgba(197, 91, 4, 0.445);   
+    font-family: 'Kaushan Script', cursive;
+}
+#ed ul{
+    margin: 8px;
+    margin-top: -15px;
+    color: #ffffff;
+    padding-right: 15px;
+}
+#ed li{
+    padding: 5px;
+}
+footer{
+    grid-area: f;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: -20px;
+}
+h1, h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 36px;
+    color: #650808;
+    padding: 15px;
+    margin: 2px;
+}
+p{
+    font-family: 'Kaushan Script', cursive;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px;
+    margin: 15px; 
+}
+#hobbies ol{
+    font-family: 'Kaushan Script', cursive;
+    font-size: large;
+    padding: 15px;
+    color: #ffffff;
+    margin-top: -5px;
+    margin-left: 45px;
+}
+
+footer p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 12px;
+}
+html{
+    background-color: black;
+}
+a{
+    color: rgb(196, 250, 0);
+    text-decoration: none;
+}
+
+#ed h2, #hobbies h2{
+    text-align: center; padding-top: -10px;
+}
+h2{
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+#bio h2{
+    margin-left: 20px;
+    
+}
+
+#ed h2{
+    margin-bottom: 0px;
+    
+}
+
