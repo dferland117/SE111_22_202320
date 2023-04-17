@@ -56,7 +56,7 @@ main{
 #hobbies{
     margin-top: -50px;
     background-color: yellow;
-    grid-area: n;
+    grid-area:n;
     margin-left: 5px;
     height: 100%; 
 }
