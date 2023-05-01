@@ -12,7 +12,8 @@ main{
                          "l l l r fr "
                          "l l l r fr"
                          "f f f f f";   
-    width: 1843px;
+    width: 1820px;
+    height: 1080px;
     margin: 0 auto 0 auto;
     background-color: #282828;
 }
@@ -20,7 +21,7 @@ main{
 header{
     grid-area: h;
     background-color: #070707;
-    width: 1840px;
+    width: 1820px;
     height: 100px;
 }
 header h1 {
@@ -64,7 +65,6 @@ header h1 {
     border-top: 5px solid #BB0908;
     grid-area: l;
     display: grid; 
-    font-family: 'Rock Salt', cursive;
     grid-template-areas: "b b b a a a"
                          "b b b c c c"
                          "b b b c c c"
@@ -80,23 +80,27 @@ header h1 {
     color: #FF1D29;
     width: 348px;
     grid-area: a;
+    font-family: 'Rock Salt', cursive;
     font-size: 30px;
     font-weight: 400;
     margin-top: -7px;
-    margin-left: 20px;
+    margin-left: 16px;
     border-bottom: 4px solid #BB0908;
+    
    
 }
  .Friday13th{
     grid-area: b; 
     width: 310px;
-    height: 481px; 
-    margin: 0 19px 0 0;
+    height: 478px; 
+    margin: -5px 19px 0 0;
+    border-top: 5px solid #BB0908;
 }
 .txt{
     grid-area: c;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;;
+    font-weight: 400;
     color: #FFFFFF;
     margin: -17px 20px 16px 19px;
 }
@@ -110,11 +114,14 @@ header h1 {
 }
 .Friday13thDVD{
     grid-area: im;
+    width: 117;
+    height: 148;
     margin: 5px 23px 20px 19px;
 }
 .amazon{
     grid-area: am;
     color: #22C1CB;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 .price{
@@ -149,37 +156,45 @@ header h1 {
 }
 #FarRight_content{
     grid-area: fr;
-    height: 935px;
-    width: 380px; 
+    height: 918px;
+    width: 360px; 
     margin: 0 0 0 15PX;
     background-color: #393939;  
 }
 
-#FarRight_content p{
+#FarRight_content .FR_txt{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
     color: #FFFFFF;
-    margin: 31px 41px 24px 44px;
+    margin: -10px 41px 0px 44px;
 }
 
 #FarRight_content span{
-    color: #FC0303;
+    color: #FF1D29
 }
 #SignPic{
-    margin: 25px 18px 31px 30px;
+    width:325px;
+    height:254px;
+    margin: 25px 18px 31px 17px;
 }
 #UnderwaterPic{
-    margin: 25px 18px 31px 30px;
+    margin: 32px 17px 0 18px ;
+    width: 325px;
+    height: 170.52px;
 }
 footer{
     grid-area: f;
     background-color: #070707;;
-    width: 1843px;
+    width: 1820px;
     height: 60px;
 }
 footer p{
     color: #BCBCBC;
     font-family: 'Teko', sans-serif;
+    width: 1820px;
+    height: 60;
     font-size: 12px;
     margin: 21px 0 22px 30px;
 }
