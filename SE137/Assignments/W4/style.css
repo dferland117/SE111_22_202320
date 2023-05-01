@@ -72,25 +72,25 @@ header h1 {
                          "b b b d d d"
                          "b b b d d d";
     width: 700px;   
-    height: 500px;
+    height: 481px;
     margin: 20px 10px 25px 30px;
     background-color: #393939;  
 }
 .btmleftHeader{
     color: #FF1D29;
+    width: 348px;
     grid-area: a;
     font-size: 30px;
     font-weight: 400;
     margin-top: -7px;
     margin-left: 20px;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-underline-position: above;
+    border-bottom: 4px solid #BB0908;
+   
 }
  .Friday13th{
     grid-area: b; 
     width: 310px;
-    height: 500px; 
+    height: 481px; 
     margin: 0 19px 0 0;
 }
 .txt{
@@ -131,8 +131,8 @@ header h1 {
 #right_content{
     border-top: 5px solid #BB0908;
     grid-area: r;
-    height: 500px;
-    width: 700px;
+    width: 700px;   
+    height: 481px;
     margin: 20px 0px 25px 0;
     background-color: #393939; 
 }
