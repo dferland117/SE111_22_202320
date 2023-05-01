@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Teko:wght@300&display=swap');
+
+main{
+    display: grid;
+    grid-template-areas: "h h h h h "
+                         "b b b b fr"
+                         "b b b b fr"
+                         "l l l r fr "
+                         "l l l r fr"
+                         "f f f f f";   
+    width: 1843px;
+    margin: 0 auto 0 auto;
+    background-color: #282828;
+}
+
+header{
+    grid-area: h;
+    background-color: #070707;
+    width: 1840px;
+    height: 100px;
+}
+header h1 {
+    margin: 35px 1312px 15px 30px;
+    color: #BB0908;
+    font-size: 48px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+.Youtube{
+    position: relative;
+    left: 1565px;
+    bottom: 100px;
+    margin: 0 -10px 0 0;
+
+}
+.Snapchat{
+    position: relative;
+    left: 1600px;
+    bottom: 100px;
+    margin: 0 -10px 0 -10px;
+   
+
+}
+.Twitter{
+    position: relative;
+    left: 1638px;
+    bottom: 100px;
+    margin: 0 0 0 -10px;
+
+}
+
+#banner{
+    grid-area: b;
+    background-color: rgba(180, 86, 8, 0.445); 
+    width: 1440px;
+    height: 388px; 
+    
+}
+.left_content{
+    border-top: 5px solid #BB0908;
+    grid-area: l;
+    display: grid; 
+    font-family: 'Rock Salt', cursive;
+    grid-template-areas: "b b b a a a"
+                         "b b b c c c"
+                         "b b b c c c"
+                         "b b b c c c"
+                         "b b b d d d"
+                         "b b b d d d";
+    width: 700px;   
+    height: 500px;
+    margin: 20px 10px 25px 30px;
+    background-color: #393939;  
+}
+.btmleftHeader{
+    color: #FF1D29;
+    grid-area: a;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -7px;
+    margin-left: 20px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-underline-position: above;
+}
+ .Friday13th{
+    grid-area: b; 
+    width: 310px;
+    height: 500px; 
+    margin: 0 19px 0 0;
+}
+.txt{
+    grid-area: c;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;;
+    color: #FFFFFF;
+    margin: -17px 20px 16px 19px;
+}
+.smallBox{
+    display: grid;
+    grid-area: d;
+    grid-template-areas: "im am am"
+                         "im 00 00"
+                         "im pr pr"
+                         "im pr pr";
+}
+.Friday13thDVD{
+    grid-area: im;
+    margin: 5px 23px 20px 19px;
+}
+.amazon{
+    grid-area: am;
+    color: #22C1CB;
+    font-family: 'Poppins', sans-serif;
+}
+.price{
+    grid-area: pr;
+    font-family: 'Teko', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin: 16px 38px 10px 23px;
+}
+
+#right_content{
+    border-top: 5px solid #BB0908;
+    grid-area: r;
+    height: 500px;
+    width: 700px;
+    margin: 20px 0px 25px 0;
+    background-color: #393939; 
+}
+
+.CCL_Flag{
+    margin: 20px 35px 15px 24px;
+}
+
+#right_content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0 0 19px 24px;
+}
+#FarRight_content{
+    grid-area: fr;
+    height: 935px;
+    width: 380px; 
+    margin: 0 0 0 15PX;
+    background-color: #393939;  
+}
+
+#FarRight_content p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 31px 41px 24px 44px;
+}
+
+#FarRight_content span{
+    color: #FC0303;
+}
+#SignPic{
+    margin: 25px 18px 31px 30px;
+}
+#UnderwaterPic{
+    margin: 25px 18px 31px 30px;
+}
+footer{
+    grid-area: f;
+    background-color: #070707;;
+    width: 1843px;
+    height: 60px;
+}
+footer p{
+    color: #BCBCBC;
+    font-family: 'Teko', sans-serif;
+    font-size: 12px;
+    margin: 21px 0 22px 30px;
+}
