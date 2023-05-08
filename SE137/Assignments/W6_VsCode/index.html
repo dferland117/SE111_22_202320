@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Didier Ferland Haroun">
+    <meta name="Description" content="Week 6 Lab assignment">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Week 6 Lab | Didier Ferland Haroun</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <span class="topBarFile">File</span><span class="topBar">Edit</span><span class="topBar">Help</span>
+            <span class="topBarTitle">Week 6 Assignment</span>
+            <a href="#" class="topBarSetting"></a>
+        </div>
+        <nav class="nav">
+            <a href="#" class="sideTrayIcon"></a>
+            <a href="#" class="sideWindowIcon"></a>
+            <a href="#" class="sideTrashcanIcon"></a>
+        </nav>
+
+        <aside class="close">
+            <div>
+                <div class="menuBorder">
+                    <a href="#" class="dropDownrrow"></a>
+                    <span class="bh">Files</span>
+                </div>
+
+                <ul class="fileIcon">
+                   <li class="bt">File 1</li>
+                   <li class="bt">File 1</li>
+                   <li class="bt">File 1</li>
+                   <li class="bt">File 1</li>
+                </ul>
+
+                <div claa="menuBorder">
+                    <a href="#" class="dropDownArrow"></a>
+                    <span class="bh">Other Stuff</span>
+                </div>
+                <ul class="otherStuffIcon">
+                    <li class="bt">Stuff 2</li>
+                    <li class="bt">Stuff 2</li>
+                </ul>
+            </div>
+        </aside>
+        <div class="mainScreen">
+            <div class="openTabs">
+                <div class="tabs">
+                    <a hre="#" class="tabIcon"></a>
+                    <span class="tabTxt">Tab 1</span>
+                    <a href ="#" class="xIcon"></a>
+                </div>
+            
+                <div class="tabs">
+                    <a hre="#" class="tabIcon"></a>
+                    <span class="tabTxt">Tab 2</span>
+                    <a href ="#" class="xIcon"></a>
+                </div>
+                <div class="tabs">
+                    <a hre="#" class="tabIcon"></a>
+                    <span class="tabTxt">Tab 3</span>
+                    <a href ="#" class="xIcon"></a>
+                </div>
+            </div>
+            <div class="filePath">
+                <span><a href="#">SE_137</a>><a href="#">W6</a>><a href="#">Homework</a>><a href="#" class="tabChange">Tab 1</a></span>
+            </div>
+            <textarea>
+                
+            </textarea>
+         </div>
+        <footer>
+            <span>Text goes here</span>
+            <a href="#" class="networkIcon"></a>
+        </footer>
+
+    </main>
+    <script>
+        
+
+        var a = document.querySelector(`nav a`);
+        var aside = document.querySelector(`aside`)
+        var textarea = document.querySelector(`textarea`)
+        var rightbox = document.querySelector(`.mainScreen`)
+
+        a.addEventListener(`click`, e=>{
+            e.preventDefault();
+            aside.classList.toggle(`close`)
+            textarea.classList.toggle(`change`)
+            rightbox.classList.toggle(`change`)
+        });
+
+        var div = document.querySelectorAll(`.openTabs div`)
+        var p = document.querySelector(`.tabChange`)
+
+
+        for(let i=0; i<div.length; i++)
+        {
+            div[i].addEventListener(`click`, e=>{
+                e.preventDefault();
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].style.backgroundColor = `#373737`;
+                }
+
+                e.currentTarget.style.backgroundColor = `black`;
+
+                e.currentTarget.querySelector("a")
+                p.innerHTML = `${e.currentTarget.querySelector("span").innerHTML}`;
+
+            })
+        }
+
+
+    </script>
+    
+</body>
+</html>

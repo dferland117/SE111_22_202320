@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-color: aqua;
+}
+@media(max-width:1500px)
+{
+    body{
+        background-color: blue;
+    }
+}
+@media(max-width:1000px)
+{
+    body{
+        background-color: blueviolet;
+    }
+}
+@media(max-width:750px)
+{
+    body{
+        background-color: darkmagenta;
+    }
+}
+@media(max-width:500px)
+{
+    body{
+        background-color: lavenderblush;
+    }
+}

@@ -8,17 +8,65 @@
     <title>Document</title>  
 </head>
 <body>
+    <header>File Edit Help Week 6 Assignment</header>
     <main>
+        
         <nav>
-            <a href="#"></a>
+            <a href="#"><img src="images/tray.png" alt="tray"></a>
+            <a href="#"><img src="images/tiles.png" alt="tray"></a>
+  
         </nav>
         <aside>
-            <div id="text">
-                This is Text
+            <div class="sideBar" id="files">
+                <details>
+                    <summary>Files</summary>
+                        <ul>
+                            <li>File 1</li>
+                            <li>File 2</li>
+                            <li>File 3</li>
+                            <li>File 4</li>
+                        </ul>
+                </details>
+            </div>
+            <div class="sideBar" id="OtherStuff">
+                <details>
+                    <summary>Other Stuff</summary>
+                        <ul>
+                            <li>Stuff 1</li>
+                            <li>Stuff 2</li>  
+                        </ul>
+                </details>
             </div>
         </aside>
-        <textarea></textarea>
+
+    <div class="mainScreen" id="TopNav">
+        <div class="tab">
+            <ul>
+                <li>Tab 1</li>
+                <li>Tab 2</li>
+                <li>Tab 3</li>
+            </ul>
+          </div>
+    <div class="mainScreen" id="pathofFile">
+        <div class="filePath">
+            <p><u>SE 137</u> > <u>W6</u> > <u>Homework</u> > <u>Tab 1</u></p>
+        </div>
+        
+       
+    </div>
+        
+
     </main>
+    
+<footer>
+    Text Goes here
+</footer>
+
+
+
+
+
+    
 
     <script>
       var a =  document.querySelector(`a`);
@@ -28,6 +76,24 @@
         e.preventDefault();
         aside.classList.toggle(`close`)
       });
+
+        var nav_a = document.querySelectorAll(`nav a`)
+        var p = document.querySelector(`p`)
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, e=>{
+                e.preventDefault();
+
+                for(let i=0; i<a.length; i++)
+                {
+                    a[i].style.backgroundColor = `#999`;
+                }
+                e.target.style.backgroundColor = `black`;
+                
+                p.innerHTML =`Breadcrumbs >> ${e.target.innerHTML}`;
+                })
+        }
 
     </script>
 </body>
