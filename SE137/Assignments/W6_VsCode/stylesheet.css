@@ -145,11 +145,11 @@ textarea{
 	height: 11px;
 }
 .sideTrashcanIcon{
-    background: url(img/sprites.png) no-repeat -458px 0;
-	width: 11px;
+    width: 11px;
 	height: 13px;
     display: block;
     margin-left: 15px;
+    background: url(img/sprites.png) no-repeat -458px 0;
     transform: scale(2);
     margin-top: 621px;
 }
@@ -163,12 +163,13 @@ textarea{
 .topBarSetting{
     background: url(img/sprites.png) no-repeat -433px -1px;
 	width: 12px;
+    top: 5px;
+    left: 1345px;
 	height: 12px;
     display: inline-block;
     margin-top: 0px;
     position: absolute;
-    top: 5px;
-    left: 1345px;
+    
 }
 .topBarSetting:hover{
     background: url(img/sprites.png) no-repeat -433px -190px;
@@ -195,41 +196,40 @@ footer p{
 }
 
 .networkIcon{
-    background: url(img/sprites.png) no-repeat -410px -1px;
-	width: 11px;
+    width: 11px;
 	height: 12px;
     display: inline-block;
     margin-left: 1285px;
+    background: url(img/sprites.png) no-repeat -410px -1px;
     position: absolute;
 }
 .networkIcon:hover{
-    background: url(img/sprites.png) no-repeat -410px -190px;
-	width: 11px;
+    width: 11px;
 	height: 12px;
+    background: url(img/sprites.png) no-repeat -410px -190px;
 }
 .header span{
     padding-right: 10px;
     flex: auto;
 }
 .filePath{
-    color: #C2C2C2;
     margin-top: 4px;
     margin-left: 9px;
+    color: #C2C2C2;
 }
 .filePath a{
-    color: 
-    #0058A9;
+    color: #0058A9;
 }
 ul{
     list-style-position: inside ;
     margin-top: 0px;
 }
 .fileIcon li{
-    list-style-image: url(img/paper.png);
+    list-style-image: url(img/sprites.png) no-repeat -26px -214px;
     padding-top: 5px;
 }
 .otherStuffIcon li{
-    list-style-image: url(img/fire.png);
+    list-style-image: url(img/sprites.png) no-repeat -74px -309px;
     padding-top: 5px;
 }
 .menuBorder{
