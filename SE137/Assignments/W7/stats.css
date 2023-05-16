@@ -25,21 +25,22 @@ h1{
         display: none;
 
     }
-    h1{
-        font-size: 1.5em;
-    }
     tbody,thead, tr{
         font-size: 1em;
     }
+    h1{
+        font-size: 1.5em;
+    }
+    
 }
 @media(max-width: 1000px)
 {
+    .bigStat{
+        display: none;
+    }
     .smallStat{
         display: contents;
 
-    }
-    .bigStat{
-        display: none;
     }
     h1{
         font-size: 1.5em;
